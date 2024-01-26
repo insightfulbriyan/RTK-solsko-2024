@@ -1,0 +1,15 @@
+najprej najdemo najkrajšo pot ki poteka le po belih kvadratkih
+to lahko storimo tako:
+začnemo v zgornjem levem kvadratku
+vsakič se lahko premaknemo gor, dol, levo ali desno, ampak samo če pri tem ne naletimo na oviro ali na steno, v tem primeru to smer izpustimo
+zapišemo si na katerih kvadratkih smo že bili in kako smo do njih prišli
+če pridemo na kvadratek ki smo ga v prejšnji iteraciji že obiskali primerjamo poti in dobržimo krajo, daljšo pa opustimo
+to je ena iteracija
+v naslednji začenmo na vsaki točki na kateri smo v prejšnji iteracii končali
+ko pridemo do spodnjega desnega kota vemo, da smo našli najkrajšo pot
+
+da pogledamo če slučajno obstaja krajša pot če odmaknemo eno oviro lahko:
+najdemo ovire ki stojijo ob poti (sosednji kvaratki)
+pogledamo ali ima katera izmed teh ovir pot za "soseda" vsaj 2 kvadratka
+za vsako tako oviro "napeljemo" pot skozi njo, "izrastek" pa odstranimo iz poti
+za katero izmed ovir na konu odstranimo se odločimo tako da najdem kateri izmed "izratkov" bi bil najdalji, ta pot skrajša za največ zato je to najkrajša pot

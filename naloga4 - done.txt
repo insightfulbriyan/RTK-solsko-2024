@@ -1,0 +1,6 @@
+iz standardnega vhoda dobimo n, seznam "posiljke", ki vsebuje vrednosti v_1, ... v_n, o in seznam "odskodnine"
+z mehurčastim sortiranjem razvrstimo seznam posiljke od najmanj vredne do največ vredne
+za vsak o iz odskodnine ponovimo:
+    z binarnim iskanjem najdemo najmanj vredno pošiljo ki je še večja od o, index te pošiljke na seznamu odšetejo od n, to število je k
+    seštejemo vrednosti vseh pošiljk, ki so na indeksih večjih od k, vsoti pa dodamo o*(k+1) (+1 zato ker se v "normalnih" jezikih indexi arejev začnejo z 0)
+    izpišemo v prejšnjem koraku pridobljeno vsoto
